@@ -1,0 +1,16 @@
+{
+  "listen": "0.0.0.0:8080",
+  "upstream_base_url": "http://127.0.0.1:11434",
+  "api_key": "ollama-local",
+  "request_timeout_seconds": 120,
+  "log_requests": true,
+  "model_aliases": {
+    "gpt-3.5-turbo": "qwen2.5:7b",
+    "gpt-4o-mini": "llama3.2:3b"
+  },
+  "cors": {
+    "allow_origin": "*",
+    "allow_methods": "GET,POST,OPTIONS",
+    "allow_headers": "Authorization,Content-Type"
+  }
+}
